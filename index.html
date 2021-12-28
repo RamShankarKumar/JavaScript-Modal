@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal</title>
+</head>
+<body>
+    <div class="button-container">
+        <div class="buttons">
+            <button class="login">Login</button>
+            <button class="signup">Sign Up</button>
+        </div>
+        <div class="login-modal">
+            <div class="login-left"><span>LOGIN</span></div>
+            <div class="login-right">
+                <form class="login-form">
+                    <div class="login-email">
+                        <input type="text" id="email" name="email" autocomplete='off' class='login-email-input' placeholder=" ">
+                        <label for="email" class='login-email-label'>Email ID</label>
+                    </div>
+                    <div class="login-password">
+                        <input type="password" id="pass" name="pass" class='login-password-input' placeholder=" ">
+                        <label for="pass" class='login-password-label'>Password</label>
+                    </div>
+                    <button class="login-button">Login</button>
+                </form>
+                <div class='signup-option'>
+                    <span class="new-user">Are you a new user?</span>
+                    <button class='signup-option-button'>Sign Up</button>
+                </div>
+                <div class='login-close'>X</div>
+            </div>
+        </div>
+
+        <div class="signup-modal">
+            <div class="signup-left"><span>SIGNUP</span></div>
+            <div class="signup-right">
+                <form class="signup-form">
+                    <div class="signup-email">
+                        <input type="text" id="email" name="email" autocomplete='off' class='signup-email-input' placeholder=" ">
+                        <label for="email" class='signup-email-label'>Email ID</label>
+                    </div>
+                    <div class="signup-newpassword">
+                        <input type="newpassword" id="newpass" name="newpass" class='signup-newpassword-input' placeholder=" ">
+                        <label for="newpass" class='signup-newpassword-label'>New Password</label>
+                    </div>
+                    <div class="signup-password">
+                        <input type="password" id="pass" name="pass" class='signup-password-input' placeholder=" ">
+                        <label for="pass" class='signup-password-label'>Confirm Password</label>
+                    </div>
+                    <button class="signup-button">SIGNUP</button>
+                </form>
+                <div class='login-option'>
+                    <span class="new-user">Already having an account?</span>
+                    <button class='login-option-button'>Login</button>
+                </div>
+                <div class='signup-close'>X</div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
