@@ -233,6 +233,11 @@
     padding: 2px;
 }
 
+.signup-option-button:hover, .login-option-button:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .login-left span, .signup-left span{
     transform: rotate(-90deg);
     font-weight: 1000;
