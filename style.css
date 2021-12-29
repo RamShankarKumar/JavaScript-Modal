@@ -54,7 +54,7 @@
 
 .login-modal, .signup-modal{
     position: absolute;
-    height: 60%;
+    /* height: 60%; */
     width: 50%;
     border-radius: 10px;
     display: grid;
@@ -222,6 +222,10 @@
     font-family: Roboto;
 }
 
+.login-option > *, .signup-option > *{
+    margin: 0.5rem 0;
+}
+
 .signup-option-button, .login-option-button{
     width: 75px;
     height: 30px;
@@ -256,7 +260,7 @@
 /* This is to remove the letter spacing from the last character of the word. letter spacing is given to last character also which is look like a bug in css */
 .login-left span::after, .signup-left span::after{
     content: "";
-    margin-left: -2rem;
+    margin-left: -1.5rem;
 }
 
 .login-close, .signup-close{
@@ -278,6 +282,10 @@
     .login-option > *, .signup-option > *{
         margin: 0.5rem 0;
     }
+    .login-modal, .signup-modal{
+        /* height: 60%; */
+        width: 80%;
+    }
 }
 
 @media(max-width: 700px){
@@ -287,15 +295,15 @@
     }
     .login-left span, .signup-left span{
         transform: none;
-        font-size: 3rem;
+        font-size: 5rem;
     }
     .login-left, .signup-left{
         border-right: none;
         border-bottom:  10px solid #80d0c7;
     }
     .login-modal, .signup-modal{
-        height: 80%;
-        width: 50%;
+        /* height: 60%; */
+        width: 80%;
     }
     .login-left span::after, .signup-left span::after{
         content: "";
@@ -306,23 +314,37 @@
 @media(max-width: 600px){
     .login-left span, .signup-left span{
         transform: none;
-        font-size: 3rem;
+        font-size: 4rem;
         letter-spacing: 1rem;
     }
     .login-left span::after, .signup-left span::after{
         content: "";
         margin-left: -1rem;
     }
+    .login-modal, .signup-modal{
+        /* height: 60%; */
+        width: 80%;
+    }
 }
 
 @media(max-width: 550px){
     .login-left span, .signup-left span{
         transform: none;
-        font-size: 3rem;
+        font-size: 4rem;
         letter-spacing: 0.4rem;
     }
     .login-left span::after, .signup-left span::after{
         content: "";
         margin-left: -0.7rem;
+    }
+    .login-modal, .signup-modal{
+        /* height: 60%; */
+        width: 80%;
+    }
+}
+
+@media(max-width: 350px){
+    .login-left span, .signup-left span{
+        font-size: 3rem;
     }
 }

@@ -66,4 +66,3 @@ const signupOptionClickHandler = () => {
 }
 loginOptionButton.addEventListener('click', loginOptionClickHandler);
 signupOptionButton.addEventListener('click', signupOptionClickHandler);
-
