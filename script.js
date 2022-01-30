@@ -1,3 +1,4 @@
+//grabbing the DOM elements that we need to interact with
 const login = document.querySelector('.login');
 const signup = document.querySelector('.signup');
 const loginModal = document.querySelector('.login-modal');
